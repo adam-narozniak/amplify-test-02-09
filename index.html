@@ -1,11 +1,110 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World in new branch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audio Generator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 28px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #333;
+            border: none;
+            color: #fff;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
+
 <body>
-  <h1>Hello World in new branch</h1>
+<h1>Welcome to Audio Generator</h1>
+<form>
+    <label for="input-text">Insert your prompt to generate music (describe the type of music you want to
+        listen):</label> <br>
+    <input type="text" id="input-text">
+    <br>
+    <button type="submit" id="submit-btn">Generate Music</button>
+</form>
+<table id="results-table">
+    <thead>
+    <tr>
+        <th>Prompt</th>
+        <th>Generated Music</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
 </body>
 </html>
-
